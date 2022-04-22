@@ -3,14 +3,14 @@ import discord
 import sys
 import random
 
-ID_TEXT_CHANNEL = 953967217534459934
-ID_MESSAGE = 954281307284860978
-TOKEN = 'OTUzOTYwNTU4NDM1MTEwOTIy.YjMLAA.16MrhuXxNPMmwIhw5do3LrJSSuQ'
+ID_TEXT_CHANNEL = bidule
+ID_MESSAGE = machin
+TOKEN = 'truc'
 
-LOGIN_MESSAGES = {"Quelqu'un est connecté sur l'ordinateur !", "Trop tard ! La station a été shotgun !", "La station est occupée, repasse plus tard !", 
+LOGIN_MESSAGES = {"Quelqu'un est connectÃ© sur l'ordinateur !", "Trop tard ! La station a Ã©tÃ© shotgun !", "La station est occupÃ©e, repasse plus tard !", 
                        "Il y a un membre de l'association d'audiovisuel de l'UTC sur cette station !"}
-LOGOUT_MESSAGES = {"Il n'y a plus personne sur la station !", "La station est maintenant libre !", "La personne qui était sur cette station a quitté le poste !"
-                          , "La station n'est plus occupée par personne !"} 
+LOGOUT_MESSAGES = {"Il n'y a plus personne sur la station !", "La station est maintenant libre !", "La personne qui Ã©tait sur cette station a quittÃ© le poste !"
+                          , "La station n'est plus occupÃ©e par personne !"} 
 
 botClient = discord.Client()
 
