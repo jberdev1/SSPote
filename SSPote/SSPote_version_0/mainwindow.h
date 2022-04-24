@@ -4,6 +4,13 @@
 #include <QMainWindow>
 #include <QProcess>
 #include <qpushbutton.h>
+#include <QDebug>
+#include <QPalette>
+#include <QToolButton>
+#include <QPushButton>
+
+#include "imagebutton.h"
+#include <QObject>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,19 +26,7 @@ public:
     QPushButton* main_button = nullptr;
 
 public slots:
-     void onButtonClicked () {
-         qDebug () << "Button clicked";
-         if(connected){
-            main_button->setText("Appuie sur ce bouton quand tu commence à utiliser la station !");
-            qDebug() << QProcess::execute("py ../../SSPote_bot.py connected");
-         }
-         else{
-            main_button->setText("Appuie sur ce bouton quand tu as terminé d'utiliser la station !");
-            qDebug() << QProcess::execute("py ../../SSPote_bot.py disconnected");
-         }
-         connected = !connected;
-
-     };
+     void onButtonClicked ();
 
 private:
     Ui::MainWindow *ui;
