@@ -25,11 +25,11 @@ async def on_ready():
     text_channel = await botClient.fetch_channel(ID_TEXT_CHANNEL)
     if(sys.argv[1] == 'connected'):
         await text_channel.purge(check = delete_all_messages_except_one)
-        await text_channel.send(LOGIN_MESSAGES[random.randrange(3)])
+        await text_channel.send(LOGIN_MESSAGES[random.randrange(4)])
     elif(sys.argv[1] == 'clean'):
         await text_channel.purge(check = delete_all_messages_except_one)
     elif(sys.argv[1] == 'disconnected'):
-        await text_channel.send(LOGOUT_MESSAGES[random.randrange(3)])
+        await text_channel.send(LOGOUT_MESSAGES[random.randrange(4)])
 
     print('Le message a ete envoye')
     await botClient.close()
