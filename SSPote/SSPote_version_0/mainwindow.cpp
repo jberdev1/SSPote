@@ -36,11 +36,12 @@ void MainWindow::onButtonClicked()
 
     if(connected){
       main_button->setText("Appuie sur ce bouton quand tu commence à utiliser la station !");
-      //process.execute("python3", {scriptFile, "disconnected"});
+
+      process.execute("python3", {scriptFile, "disconnected"});
 
     }else{
       main_button->setText("Appuie sur ce bouton quand tu as fini d'utiliser la station !");
-      //process.execute("python3", {scriptFile, "connected"});
+      process.execute("python3", {scriptFile, "connected"});
     }
      connected = !connected;
 
