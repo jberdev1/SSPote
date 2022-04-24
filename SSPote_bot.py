@@ -3,14 +3,14 @@ import discord
 import sys
 import random
 
-ID_TEXT_CHANNEL = bidule
+ID_TEXT_CHANNEL = truc
 ID_MESSAGE = machin
-TOKEN = 'truc'
+TOKEN = 'bidule'
 
-LOGIN_MESSAGES = {"Quelqu'un est connecté sur l'ordinateur !", "Trop tard ! La station a été shotgun !", "La station est occupée, repasse plus tard !", 
-                       "Il y a un membre de l'association d'audiovisuel de l'UTC sur cette station !"}
-LOGOUT_MESSAGES = {"Il n'y a plus personne sur la station !", "La station est maintenant libre !", "La personne qui était sur cette station a quitté le poste !"
-                          , "La station n'est plus occupée par personne !"} 
+LOGIN_MESSAGES = ["Quelqu'un est connecté sur l'ordinateur !", "Trop tard ! La station a été shotgun !", "La station est occupée, repasse plus tard !", 
+                       "Il y a un membre de l'association d'audiovisuel de l'UTC sur cette station !"]
+LOGOUT_MESSAGES = ["Il n'y a plus personne sur la station !", "La station est maintenant libre !", "La personne qui était sur cette station a quitté le poste !"
+                          , "La station n'est plus occupée par personne !"]
 
 botClient = discord.Client()
 
@@ -47,6 +47,7 @@ async def on_disconnect():
 
 print(sys.argv[1])
 botClient.run(TOKEN)
+
 
 
 
